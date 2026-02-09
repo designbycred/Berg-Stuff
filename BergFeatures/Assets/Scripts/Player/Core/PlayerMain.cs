@@ -47,7 +47,7 @@ public class PlayerMain : MonoBehaviour
         Vector3 planar = Vector3.zero;
 
         if (walk != null)
-            planar += walk.GetPlanarVelocity();
+            planar += walk.GetPlanarVelocity(dt);
 
         if (jetpack != null)
             planar += jetpack.GetPlanarVelocity(dt);
